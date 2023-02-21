@@ -4067,6 +4067,7 @@ module ysyx_22000000(
         .instr(instr),.pc(pc),.wb_commit(wb_commit),.wb_pc(wb_pc),.wb_instr(wb_instr),.next_pc(next_pc),.wb_dev_o(wb_dev_o),
         .rw_addr_o(rw_addr_o),.rw_req_o(rw_req_o),.rw_valid_o(rw_valid_o),.rw_w_data_o(rw_w_data_o),
         .data_read_i(data_read_i),.rw_ready_i(rw_ready_i),.rw_size_o(rw_size_o),
+        .rw_dev_o(rw_dev_o), .rw_bytes_o(rw_bytes_o),
         .io_sram0_addr(io_sram0_addr),.io_sram0_cen(io_sram0_cen),.io_sram0_wen(io_sram0_wen),.io_sram0_wdata(io_sram0_wdata),.io_sram0_rdata(io_sram0_rdata),
         .io_sram1_addr(io_sram1_addr),.io_sram1_cen(io_sram1_cen),.io_sram1_wen(io_sram1_wen),.io_sram1_wdata(io_sram1_wdata),.io_sram1_rdata(io_sram1_rdata),
         .io_sram2_addr(io_sram2_addr),.io_sram2_cen(io_sram2_cen),.io_sram2_wen(io_sram2_wen),.io_sram2_wdata(io_sram2_wdata),.io_sram2_rdata(io_sram2_rdata),
@@ -4145,3 +4146,4 @@ module ysyx_22000000(
     assign io_slave_rid = 0;
 
 endmodule
+
