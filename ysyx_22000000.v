@@ -11,7 +11,8 @@ module ysyx_22000000_Adder64(//y turn into ~y outside when to sub
     ysyx_22000000_Adder32 adder_high(res_h, cout, x[63:32], y[63:32], c_l);
     assign result = {res_h, res_l};
 */
-    assign {cout, result} = {1'b0,x} + {1'b0,y} + {64'b0,sub};
+    //assign {cout, result} = {1'b0,x} + {1'b0,y} + {64'b0,sub};
+    assign {cout, result} = {1'b1,x} + {1'b1,y} + {64'b11111111111111,sub};
     assign OF = (~x[63] & ~y[63] & result[63]) | (x[63] & y[63] & ~result[63]);
     assign SF = result[63];
     assign ZF = (result == 64'h0000000000000000 ? 1 : 0);
