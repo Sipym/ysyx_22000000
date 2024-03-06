@@ -27,7 +27,7 @@ flag = "ver"                         # commit flag[dont use]
 [vcs]
 flag        = "vcs"                  # commit flag[dont use]
 freq        = 25
-prog        = {name = "", type = ""} # format: [name]-[type] name: [hello, memtest, rtthread] type: [flash, mem, sdram]
+prog        = {name = "hello", type = "flash"} # format: [name]-[type] name: [hello, memtest, rtthread] type: [flash, mem, sdram]
                                      # leave name item a blank mean test all programs
 wave        = "off"                  # [off on]
 
