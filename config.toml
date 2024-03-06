@@ -7,6 +7,7 @@ project = "demo"
 author  = "Ben"
 version = "1.0"
 
+# for OSOC, top name equal to sid
 [dut]
 file        = "ysyx_22000000.v"      # dut file name TODO: support filelist
 top         = "ysyx_22000000"        # top module name
