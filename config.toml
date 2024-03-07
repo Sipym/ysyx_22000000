@@ -9,10 +9,11 @@ version = "1.0"
 
 # for OSOC, top name equal to sid
 [dut]
+arch        = "rv64im"               # [rv32e rv32i rv32im rv64i rv64im]
 file        = "ysyx_22000000.v"      # dut file name TODO: support filelist
 top         = "ysyx_22000000"        # top module name
 clk         = "clock"                # top clock signal name
-commit      = "dc"                     # support ["", "vcs", "dc"] leave a blank mean
+commit      = "vcs"                     # support ["", "vcs", "dc"] leave a blank mean
                                      # test vcs+dc, otherwise ci only run specific test 
                                      # which commit equal below testsuit's flag.
                                      # Now iverilog and verilator test are not supported.
@@ -24,6 +25,10 @@ flag = "iv"                          # commit flag[dont use]
 [verilator]
 flag = "ver"                         # commit flag[dont use]
 
+[yosys]
+flag        = "yosys"                # commit flag[dont use]
+freq        = 25
+
 [vcs]
 flag        = "vcs"                  # commit flag[dont use]
 freq        = 25
@@ -32,7 +37,19 @@ prog        = {name = "hello", type = "flash"} # format: [name]-[type] name: [he
 wave        = "off"                  # [off on]
 
 [dc]
-flag        = "dc"                   # flag[dont use]
+flag        = "dc"                   # commit flag[dont use]
+process     = "28"                   # [110, 40, 28] [fixed value]
 freq        = 100                    # [100, 800, step: 50]
 corner      = "TYP"                  # [WCZ MAX WCL TYP MIN ML MZ]
+track       = "8T"                   # [8T ...] [dont use]
+volt_chnl   = "SVT40"                # voltage threshold and channel length secletion such as "SVT40+SVT35"
+                                     # or "SVT40+LVT35:0.3" to limit ration of LVT35
 retime      = "off"                  # [off on]
+user        = ""                     # [dont use]
+
+[ieda]
+flag        = "ieda"                 # commit flag[dont use]
+
+[fpga]
+flag        = "fpga"                 # commit flag[dont use]
+freq        = 25
