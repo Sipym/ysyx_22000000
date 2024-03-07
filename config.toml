@@ -12,7 +12,7 @@ version = "1.0"
 file        = "ysyx_22000000.v"      # dut file name TODO: support filelist
 top         = "ysyx_22000000"        # top module name
 clk         = "clock"                # top clock signal name
-commit      = ""                     # support ["", "vcs", "dc"] leave a blank mean
+commit      = "dc"                     # support ["", "vcs", "dc"] leave a blank mean
                                      # test vcs+dc, otherwise ci only run specific test 
                                      # which commit equal below testsuit's flag.
                                      # Now iverilog and verilator test are not supported.
