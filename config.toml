@@ -5,9 +5,10 @@
 # [fixed value]: this option is a fixed value, modify this option has no effect
 
 [meta]
-project = "demo"                     # [dont use]
-author  = "Ben"                      # [dont use]
-version = "1.0"                      # [dont use]
+project = "demo"                                 # [dont use]
+author  = "Ben"                                  # [dont use]
+version = "1.0"                                  # [dont use]
+notif   = {mail = "maksyuki@126.com", ena = "on"} # ena: [off on]
 
 [dut]
 arch        = "rv64im"               # [rv32e rv32i rv32im rv64i rv64im]
