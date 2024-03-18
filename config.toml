@@ -12,10 +12,10 @@ notif   = {mail = "maksyuki@126.com", ena = "on"} # ena: [off on]
 
 [dut]
 arch        = "rv64im"               # [rv32e rv32i rv32im rv64i rv64im]
-file        = "ysyx_22000000.v"      # dut file name
-top         = "ysyx_22000000"        # top module name
+file        = "chiplink.v"           # dut file name
+top         = "ChiplinkBridge"       # top module name
 clk         = "clock"                # top clock signal name
-commit      = "vcs"                  # ["", "vcs", "dc"]
+commit      = "dc"                   # ["", "vcs", "dc"]
                                      # leaving a blank means test vcs+dc, otherwise 
                                      # ci only run specific test when 'commit' == test's flag
                                      # example: commit == "dc" means only run dc test
