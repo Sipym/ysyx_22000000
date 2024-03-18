@@ -8,7 +8,7 @@
 project = "demo"                                 # [dont use]
 author  = "Ben"                                  # [dont use]
 version = "1.0"                                  # [dont use]
-notif   = {mail = "maksyuki@126.com", ena = "on"} # ena: [off on]
+notif   = {mail = "maksyuki@126.com", ena = "off"} # ena: [off on]
 
 [dut]
 arch        = "rv64im"               # [rv32e rv32i rv32im rv64i rv64im]
@@ -44,7 +44,7 @@ wave        = "off"                  # [off on] note: wave option only valid whe
 [dc]
 flag        = "dc"                   # commit flag
 process     = "28"                   # [110, 40, 28] [fixed value]
-freq        = 100                    # [100, 800, step: 50]
+freq        = 400                    # [100, 800, step: 50]
 corner      = "MAX"                  # [WCZ MAX WCL TYP MIN ML MZ]
 track       = "9T"                   # [8T 9T 10T 11T 12T] [fixed value]
 volt_chnl   = "SVT40+LVT40"          # voltage threshold and channel length secletion such as "SVT40+SVT35"
