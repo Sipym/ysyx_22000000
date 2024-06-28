@@ -11,9 +11,9 @@ version = "1.0"                                  # [dont use]
 notif   = {mail = "maksyuki@126.com", ena = "off"} # ena: [off on]
 
 [dut]
-arch        = "rv64im"               # [rv32e rv32i rv32im rv64i rv64im]
-file        = "chiplink.v"           # dut file name
-top         = "ChiplinkBridge"       # top module name
+arch        = "rv32e"                # [rv32e rv32i rv32im rv64i rv64im]
+file        = "Topsyn.sv"            # dut file name
+top         = "Top"                  # top module name
 clk         = "clock"                # top clock signal name
 commit      = "dc"                   # ["", "vcs", "dc"]
                                      # leaving a blank means test vcs+dc, otherwise 
