@@ -8,7 +8,7 @@
 project = "demo"                                 # [dont use]
 author  = "Ben"                                  # [dont use]
 version = "1.0"                                  # [dont use]
-notif   = {mail = "maksyuki@126.com", ena = "off"} # ena: [off on]
+notif   = {mail = "maksyuki@126.com", ena = "on"} # ena: [off on]
 
 [dut]
 arch        = "rv32e"                # [rv32e rv32i rv32im rv64i rv64im]
@@ -35,7 +35,7 @@ freq        = 25                     # [dont use]
 [vcs]
 flag        = "vcs"                  # commit flag
 freq        = 25                     # [dont use]
-prog        = {name = "hello", type = "flash"} # format: [name]-[type] name: [hello, memtest, rtthread] type: [flash, mem, sdram]
+prog        = {name = "hello", type = "sdram"} # format: [name]-[type] name: [hello, memtest, rtthread] type: [flash, sdram]
                                      # leave name item a blank means testing all programs
 wave        = "off"                  # [off on] note: wave option only valid when prog.name is not a blank and wave is "on"
                                      # now only support prog.name == hello, and prog.type can ben 'flash', 'mem' and 'sdram',
