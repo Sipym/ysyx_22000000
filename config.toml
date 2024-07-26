@@ -42,7 +42,7 @@ wave        = "off"                  # [off on] note: wave option only valid whe
                                      # other combinations dont support if you want to generate wave
 
 [dc]
-flag        = "dc"                   # commit flag
+flag        = "vcs"                   # commit flag
 process     = "28"                   # [110, 40, 28] [fixed value]
 freq        = 400                    # [100, 800, step: 50]
 corner      = "MAX"                  # [WCZ MAX WCL TYP MIN ML MZ]
