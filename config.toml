@@ -15,7 +15,7 @@ arch        = "rv32e"                # [rv32e rv32i rv32im rv64i rv64im]
 file        = "Topsyn.sv"            # dut file name
 top         = "Top"                  # top module name
 clk         = "clock"                # top clock signal name
-commit      = "vcs"                   # ["", "vcs", "dc"]
+commit      = ""                     # ["", "vcs", "dc"]
                                      # leaving a blank means test vcs+dc, otherwise 
                                      # ci only run specific test when 'commit' == test's flag
                                      # example: commit == "dc" means only run dc test
